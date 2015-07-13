@@ -1,0 +1,26 @@
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata minClientVersion="2.8">
+    <id>Ktos.Build.GitVersion</id>
+    <version>1.0.2</version>
+    <title>Ktos.Build.GitVersion</title>
+    <authors>Marcin "Ktos" Badurowicz</authors>
+    <owners>ktos</owners>
+    <licenseUrl>http://www.opensource.org/licenses/mit-license.php</licenseUrl>
+    <projectUrl>http://ktos.info/</projectUrl>    
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+	<summary>This nuget updates your AssemblyInfo.cs with data from git repository based on GitFlow model with your own versioning schemas.</summary>
+    <description>This nuget updates your AssemblyInfo.cs with data from git repository based on GitFlow model (http://nvie.com/posts/a-successful-git-branching-model/), allowing you to create Semantic Versioning (http://semver.org/). It is basically a modification of GitVersion (https://github.com/ParticularLabs/GitVersion). Main differences are that using MSBuildCommunityTasks the AssemblyInfo.template.cs file is being changed with some variables being changed to proper version info, instead of creating completely new AssemblyInfo.cs. 
+
+Reasons are: 
+* I don't like GitVersion full versioning (like 1.2.3+4.Branch.master.Sha.12345678901234567890), so I can use here my own versioning scheme (like 1.2.3+4.master.1234567) (without "branch", "sha" and with short SHA hash);
+* Automatically generated assemblies from GitVersion were not compatible with NETMF.</description>
+    <language>en-US</language>
+    <tags>gitflow gitversion git semver</tags>
+    <developmentDependency>true</developmentDependency>
+    <releaseNotes>fixed targets file</releaseNotes>
+    <copyright>Copyright © Marcin "Ktos" Badurowicz 2014-2015. All Rights Reserved.</copyright>
+	<dependencies>
+      <dependency id="MSBuildTasks" version="1.4.0.78" />
+    </dependencies>
+  </metadata>
+</package>
