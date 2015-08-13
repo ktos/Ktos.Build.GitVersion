@@ -17,7 +17,7 @@ Reasons are:
     <language>en-US</language>
     <tags>gitflow gitversion git semver</tags>
     <developmentDependency>true</developmentDependency>
-    <releaseNotes>fixed targets file</releaseNotes>
+    <releaseNotes>upgraded to newest GitVersion and MSBuildTasks</releaseNotes>
     <copyright>Copyright © Marcin "Ktos" Badurowicz 2014-2015. All Rights Reserved.</copyright>
 	<dependencies>
       <dependency id="MSBuildTasks" version="1.4.0.88" />
