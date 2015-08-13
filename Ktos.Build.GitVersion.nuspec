@@ -1,7 +1,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata minClientVersion="2.8">
     <id>Ktos.Build.GitVersion</id>
-    <version>1.0.2</version>
+    <version>1.1.0</version>
     <title>Ktos.Build.GitVersion</title>
     <authors>Marcin "Ktos" Badurowicz</authors>
     <owners>ktos</owners>
@@ -20,7 +20,7 @@ Reasons are:
     <releaseNotes>fixed targets file</releaseNotes>
     <copyright>Copyright © Marcin "Ktos" Badurowicz 2014-2015. All Rights Reserved.</copyright>
 	<dependencies>
-      <dependency id="MSBuildTasks" version="1.4.0.78" />
+      <dependency id="MSBuildTasks" version="1.4.0.88" />
     </dependencies>
   </metadata>
 </package>

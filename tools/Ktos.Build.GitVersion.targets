@@ -3,7 +3,7 @@
 
   <UsingTask
     TaskName="GitVersionTask.GetVersion"
-    AssemblyFile="$(SolutionDir)packages\Ktos.Build.GitVersion.1.0.2\GitVersionTask.dll"  />
+    AssemblyFile="$(SolutionDir)packages\Ktos.Build.GitVersion.1.1.0\GitVersionTask.dll"  />
 
   <Target Name="Version" BeforeTargets="BeforeBuild">
     <GetVersion SolutionDirectory="$(SolutionDir)">
@@ -26,6 +26,7 @@
       <Output TaskParameter="PreReleaseTag" PropertyName="GfvPreReleaseTag" />
       <Output TaskParameter="PreReleaseTagWithDash" PropertyName="GfvPreReleaseTagWithDash" />
       <Output TaskParameter="InformationalVersion" PropertyName="GfvInformationalVersion" />
+	  <Output TaskParameter="CommitDate" PropertyName="GitVersion_CommitDate" />
     </GetVersion>
 
     <GitVersion LocalPath="$(MSBuildProjectDirectory)">
